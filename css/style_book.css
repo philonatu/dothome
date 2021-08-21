@@ -1,0 +1,584 @@
+/*
+이하는 style.css
+body {
+    margin: 0;
+    line-height: 2.5em;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 18px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    color: gold;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+    width: 100%;
+    height: 100%;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: space-between;
+    flex-basis: 400px;
+    background-image: url("../img/fliegen03.png");
+    background-size: 100%;
+    flex-wrap: wrap;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: #263343;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.menu-1,
+.menu-2,
+.menu-3,
+.menu-4,
+.menu-5 {
+    font-size: 15px;
+    color: white;
+    text-decoration: none;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 25px;
+    padding: 6px;
+}
+
+.tooltip {
+    position: relative;
+}
+
+.tooltip::after,
+.tooltip::before {
+    content: ' ';
+    position: absolute;
+    background-color: #263343;
+    height: auto;
+    width: 110px;
+    top: 0;
+    left: 0%;
+    transform: translate(0, 0);
+    transition: .3s ease-in-out transform;
+}
+
+.tooltip::before {
+    font-size: 12px;
+    content: attr(data-tooltips);
+    color: white;
+    line-height: 20px;
+    top: 10px;
+    padding: 10px;
+    border-radius: 4px;
+    transform: translateY(33px) scale(0);
+}
+
+.tooltip::after {
+    height: 10px;
+    width: 10px;
+    transform: translate(20px, 44px) rotate(45deg) scale(0);
+}
+
+.tooltip:hover::after {
+    transform: translate(20px, 44px) rotate(45deg) scale(1);
+}
+
+.tooltip:hover::before {
+    transform: translateY(33px) scale(1);
+}
+
+a:hover {
+    color: gold;
+}
+
+.search {
+    display: inline-block;
+    border: 1px;
+}
+
+.input_text {
+    width: 100px;
+    margin-left: 20px;
+    border: 0px;
+    height: 15px;
+    font-size: 12px;
+    outline: none;
+}
+
+.submit_Top {
+    font-size: 12px;
+    width: 40px;
+    height: 20px;
+    margin-right: 50px;
+    border: 10px;
+    */
+/* vertical-align: center; */
+/*
+    background: #263343;
+    color: white;
+    font-family: sans-serif;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.submit_Top:hover {
+    background: dimgray;
+}
+
+.headwords {
+    text-align: center;
+    display: inline;
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: auto;
+    flex-wrap: wrap;
+}
+.headwords img {
+    width: 250px;
+    position: absolute;
+    top:93px;
+    left:900px;
+}
+.navbar_under {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: stretch;
+    flex-wrap: wrap;
+}
+
+.menu_under a {
+    flex-wrap: wrap;
+    flex-grow: 1;
+    flex-shrink: 0;
+    flex-basis: 20px;
+    font-size: 15px;
+    color: black;
+    padding: 5px;
+    margin-right: 50px;
+    border: 1px;
+    border-radius: 7px;
+    background-color: mintcream;
+}
+
+.menu_under a:hover {
+    background-color: aqua;
+}
+--------------------------------------*/
+.book {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+}
+
+.book01 {
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    align-self: center;
+    flex-basis: auto;
+}
+
+.books_image {
+    text-align: center;
+    margin-bottom: 30px;
+    align-self: center;
+    flex-basis: auto;
+}
+
+.books_image img {
+    width: 70%;
+    margin-right: 20px;
+    flex-basis: auto;
+}
+
+.booklist {
+    flex-basis: auto;
+    border: 1px none black;
+    margin: 0px auto;
+    text-align: left;
+    padding-left: 10px;
+    margin-bottom: 30px;
+    background-color: snow;
+    flex-basis: auto;
+}
+
+.booklist p {
+    font-size: 16px;
+}
+
+.book01 .booklist span {
+    font-size: 21px;
+    font-family: 'Nanum Pen Script', cursive;
+    color: red;
+}
+
+/*-----------------------------------------------------------------*/
+.book02 {
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: auto;
+}
+
+.book02 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.book02 .book_image h5 {
+    font-family: 'Noto Serif KR', serif;
+    color: white;
+    border: 0px solid white;
+    background-color: teal;
+    width: 70%;
+    padding: 8px;
+}
+
+.book02 .book_image img {
+    width: 250px;
+    margin-right: 50px;
+}
+
+.book02 .book_image p {
+    font-size: 14px;
+    border: 1px solid blue;
+    width: 260px;
+    padding: 5px;
+    line-height: 1.8em;
+}
+
+.book02 .book_image p span {
+    color: blue;
+    font-weight: bolder;
+}
+
+.book02 .explain {
+    border: 1px solid blue;
+    width: 650px;
+    padding: 20px;
+    margin-right: 20px;
+}
+
+.book02 .explain p {
+    font-size: 16px;
+}
+
+.charae1 {
+    font-size: 12px;
+    line-height: 1.7em;
+}
+
+.charae2 {
+    font-size: 12px;
+    line-height: 1.6em;
+}
+
+.charae1 span {
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.charae2 span {
+    font-size: 13px;
+    font-weight: bold;
+}
+
+/*-----------------------------------------------------------------*/
+.book03 {
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: auto;
+}
+
+.book03 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.book03 .book_image h5 {
+    font-family: 'Noto Serif KR', serif;
+    color: white;
+    border: 0px solid white;
+    background-color: teal;
+    width: 100%;
+    padding: 8px;
+}
+
+.book03 .book_image img {
+    width: 250px;
+    margin-right: 50px;
+}
+
+.book03 .book_image p {
+    font-size: 14px;
+    border: 0px solid blue;
+    width: 260px;
+    padding: 5px;
+    line-height: 1.8em;
+}
+
+.book03 .explain {
+    border: 0px solid blue;
+    width: 600px;
+    padding: 20px;
+    margin-right: 20px;
+}
+
+.book03 .explain p {
+    font-size: 16px;
+}
+
+.charae {
+    font-size: 11px;
+    line-height: 1.7em;
+    border: 1px solid blue;
+    padding: 5px;
+}
+
+/*--book04 비판적 생명철학----------------------------------*/
+.book04 {
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: auto;
+}
+
+.book04 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px;
+}
+
+.book04 .book_image h5 {
+    font-family: 'Noto Serif KR', serif;
+    color: white;
+    border: 0px solid white;
+    background-color: teal;
+    width: 80%;
+    padding: 8px;
+}
+
+.book04 .book_image img {
+    width: 250px;
+    margin-right: 50px;
+    border: 1px solid blue;
+}
+
+.book04 .book_image p {
+    font-size: 15px;
+    line-height: 2em;
+    border: 1px solid blue;
+    width: 260px;
+    padding: 1px;
+}
+
+.book04 a {
+    color: red;
+}
+
+.book04 .explain {
+    border: 1px solid blue;
+    width: 500px;
+    padding: 10px;
+    margin-right: 20px;
+}
+
+.book04 .explain p {
+    font-size: 16px;
+}
+
+.book04 .charae1 {
+    font-size: 12px;
+    line-height: 1.7em;
+}
+
+.book04 .charae2 {
+    font-size: 12px;
+    line-height: 1.7em;
+}
+
+/*-------------------승려와 원숭이 book05--------*/
+.book05 {
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: auto;
+}
+
+.book05 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.book05 .book_image h5 {
+    font-family: 'Noto Serif KR', serif;
+    color: white;
+    border: 0px solid white;
+    background-color: teal;
+    width: 80%;
+    padding: 8px;
+}
+
+.book05 .book_image img {
+    width: 250px;
+    margin-right: 50px;
+}
+
+.book05 .book_image p {
+    font-size: 14px;
+    border: 1px solid blue;
+    width: 260px;
+    padding: 5px;
+    line-height: 2em;
+}
+
+.book05 .explain p {
+    font-size: 16px;
+}
+
+.book05 .explain {
+    border: 1px solid blue;
+    width: 450px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-right: 20px;
+}
+
+/*-----------------------book06 생물철학----------*/
+.book06 {
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: auto;
+}
+
+.book06 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.book06 .book_image h5 {
+    font-family: 'Noto Serif KR', serif;
+    color: white;
+    border: 0px solid white;
+    background-color: teal;
+    width: 100%;
+    padding: 8px;
+}
+
+.book06 .book_image img {
+    width: 250px;
+    margin-right: 50px;
+}
+
+.book06 .book_image p {
+    font-size: 14px;
+    border: 1px solid blue;
+    width: 260px;
+    padding: 5px;
+}
+
+.book06 .explain {
+    border: 0px solid blue;
+    width: 1240px;
+    padding: 50px;
+    margin-right: 0px;
+}
+
+.book06 .explain {
+    column-width: 280px;
+    column-gap: 40px;
+}
+
+.book06 .explain {
+    font-size: 16px;
+    line-height: 2.0em;
+
+    .book06 .explain .charae {
+        font-size: 12px;
+        line-height: 1.8em;
+        color: tomato;
+        column-width: 200px;
+        column-gap: 20px;
+    }
+
+    .button {
+        border-radius: 4px;
+        background-color: #f4511e;
+        border: none;
+        color: #FFFFFF;
+        text-align: center;
+        font-size: 28px;
+        padding: 20px;
+        width: 200px;
+        transition: all 0.5s;
+        cursor: pointer;
+        margin: 5px;
+    }
+
+    .button span {
+        cursor: pointer;
+        display: inline-block;
+        position: relative;
+        transition: 0.5s;
+    }
+
+    .button span:after {
+        content: '\00bb';
+        position: absolute;
+        opacity: 0;
+        top: 0;
+        right: -20px;
+        transition: 0.5s;
+    }
+
+    .button:hover span {
+        padding-right: 25px;
+    }
+
+    .button:hover span:after {
+        opacity: 1;
+        right: 0;
+    }
+
+    /*--------------------------------------------------------------------------*/
+    @media (min-width:1500px) {
+        .headwords img {
+            width: 250px;
+            position: relativ;
+            top: 90px;
+            left: 1300px;
+        }
+    }
