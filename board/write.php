@@ -77,11 +77,11 @@ $row = mysqli_fetch_array($result);
     <tr>
       <th> 파일 첨부 </th>
       <td>
-        <input type="hidden" name="MAX_FILE_SIZE" value="300000" ></input>
-        <input type="file" name="usrfile"></input>
+        <input type="hidden" name="MAX_FILE_SIZE" value="300000" >
+        <input type="file" name="usrfile">
 
 
-        <input type="submit" value="파일 올려"> </input>
+        <!--<input type="submit" value="파일 올려">-->
       </td>
 
     </tr>

@@ -68,10 +68,10 @@ $cot--;
 ?>
 
 </table>
-
 <?php
 include("page.php");
 ?>
+
 
 </center>
 <a href="write.php">글쓰기</a>

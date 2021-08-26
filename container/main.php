@@ -1,85 +1,41 @@
 <?php
   include "container/lib01.php";
 ?>
-      <div class="main01">
-        <div class="main01-01">
+    <!-- <link rel="stylesheet" href="css/style_main.css"> -->
+<main class="cards">
+  <?php
+  $page = $_GET['page'];
 
+  $view_article = 16;
+  if(!$page) $page=1;
+  $start = ($page-1)*$view_article;
 
-          <p style="font-weight: bolder; color:red;">이 웹페이지가 완성되도록 도와주세요.</p>
-          <p>
-          제가 만들어가는 개인 웹페이지인데 게시판 작업을 하다가 제 실력으로 불가능하여 중단되었습니다. 파일업로드 하고 테이블에서 내려 받는 작업에서 스톱되었습니다. 완성시켜 주시기를 기대합니다. 게시판으로 구성된 메뉴 <아카이브> 파일을 업로드하고 다운로드하여 보여지는 페이지입니다.
-            </p>
-            1) 예를 들어 메뉴 <서평 책소개>에서 타이틀을 클릭하면 업로딩한 파일과 내용이 보이게끔 하는 일반적인 게시판입니다.
-            2) CMS 이용하지 않고 소박하지만 비전문가인 제가 혼자서 관리하고 보수할 수 있는 그런 게시판을 희망합니다.  
+  $query = "SELECT COUNT(*) as `cnt` FROM blog";
+  $result = mysqli_query($conn, $query);
+  $total = mysqli_fetch_array($result);
 
-        </div>
-        <div class="main01-02">
-          <p style="font-weight: bolder"> "질병과 건강이 공존하는 삶의 존재론"
-          </p>
+  $totalPage = ceil($total['cnt'] / $view_article);
 
-          <p> 범한철학회 발표논문 - 2021년 6월18일(금) 전북대 <br>
-            <span style="font-weight:bold"> 삶의 생태적 존재론 </span>(논문 서문에서)<br>
-
-            질병없는 완전 건강과 "청춘의 샘"을 욕망하지만 질병을 벗어날 수 없고 결국 죽음을 피할 수 없는 것이 삶의 생명이다. 태어나면서 죽음에 이르는 삶의 여정에서 우리는 질병과 건강, 고통과 즐거움, 병약함과 강건함의 심신 상태를 거쳐 간다. 생애에 걸친 심신상태가 우여곡절의 변화를 거치듯이, 나의 생명은 결핍과 욕망, 충동과 변동의 존재가 박동하는 실존이다. 여기서 말하는 삶의 변동 자체가 바로 생명 존재론의 핵심이다. <br> <br>
-
-            건강과 질병을 오가는 생명존재의 가장 큰 특징은 정상과 비정상 사이의 절대 구획이 없으며 정상과 비정상의 실체도 없다는 데 있다. 니체에서 가다머에 이르는 “큰 건강” grosse Gesundheit 개념에 따르면 질병은 정상의 반대가 아니며 정상은 단순히 몸의 결함이나 결핍 수준이 전무한 상태를 말하는 것도 아니다. <br> <br>의학해석학의 흐름을 이어받는 건강생성론life course health development; LCHD에서 말하는 건강은 (i)웰비잉과 좋은 느낌의 감정을feeling good 유지하며 (ii)자기 몸과 인격에 대한 긍정적 태도이며 (iii)사회적으로 약하고 소외된 상태에서 벗어나 몸과 마음의 온전성을 유지하는 동력학적 상태이며 변화과정이며 패턴이다. 즉 건강은 주어진 기준이 있는 것이 아니라 개인마다의 발달과정에 연관된 사회-문화-심리-생물학적 몸의 생태적 관계망relational ecological matrix에서 해석된다.
-
-          </p>
-        </div>
-
-        <div class="main01-03">
-          <p style="font-weight: bolder">실험적 자연철학이란 무엇입니까? </p>
-          <p>
-            <span style="font-weight:bold">
-              <실험적 현대 자연철학>
-            </span>은 "자연주의 인식론과 진화론적 존재론"이라는 두 토대 위에서 과학과 철학을 연결함으로써 인간과 사회에 대한 통찰력을 구하려는 필로나투 철학의 사유와 실천입니다. <br>
-          </p>
-          <p style="font-weight: bolder">실험적 자연철학은 무엇을 어떻게 다루나요?</p>
-          <p>생물학과 의학에서 신경과학과 동양고전의 자연학 등 다양한 주제를 다룹니다. 다양한 분야를 서로 연결하여 궁극적으로 이중화된 인간의 모습, "Homo Duplex"를 엿보고자 합니다. </p>
-          <img src="img/mygorilla2106.png" alt="gorilla">
-          <p>  간단히 말해서 이 웹사이트의 방향은 Homo Duplex를 과학으로 분석하고 철학으로 종합하는 데 있습니다. 그 방편으로 '반성과 비판'이라는 생각과 행동이 요청됩니다.
-          </p>
-        </div>
-
-        <div class="main01-04">
-          <img src="img/cave_painting_hunting.jpg" alt="cave painting">
-          <p style="font-weight: bolder;">
-            실험적 자연철학의 관심을 사례로 들자면요,
-          </p>
-          <p>
-            필로나투 웹페이지에서 전개되는 <실험적 현대 자연철학>은 고대 그리스 자연철학만도 아니고 독일 자연철학도 아니며 서양 중근세 자연학(박물지)만도 아니고 현대 과학철학이나 자연과학만도 아니며, 그런 모두와 더불어 동양고전 자연관까지를 포함합니다. 한 가지 예를 들어 <실험적 현대 자연철학>은 20만년 전 구석기 혹은 1만년 전 신석기 선조가 살았던 삶의 형태를 추적하는 소위 <원시 인간학>을 통하여 현대인의 생활인문학을 표현하려는 시도를 할 수 있습니다.
-          </p>
-        </div>
-      </div>
-
-      <div class="main02">
-
-        <div class="book_medicine_image">
-          <p style="font-size: 40px; font-family: 'Nanum Pen Script', cursive; color: blue;">
-            새 책 <의학의 철학> 소개합니다.</p>
-          <img src="img/book_medicine.png" alt="book_image">
-        </div>
-
-        <div class="book_medicine">
-          차례 <br>추천서문: 제임스 마컴 교수, 강신익 교수 <br>
-          1장 의철학 논쟁과 인문의학의 과제 <br>
-          2장 의학적 추론, 인과론, 의료인공지능 <br>
-          3장 분류의학과 의학 실재론 논쟁 <br>
-          4장 질병관의 역사와 질병모델 <br>
-          5장 의료인류학으로 본 질병과 건강 <br>
-          6장 진화론과 의학의 관계사 <br>
-          7장 진화의학 I: 질병취약성과 불일치모델 <br>
-          8장 진화의학 II: 진화역학과 감염성 질병, 의학교육<br>
-          9장 면역의학의 철학 <br>
-          10장 노화방지의학에서 노화의학으로 <br>
-          11장 분석과 해석: 의과학과 의철학의 접점<br>
-          (640쪽)
-        </div>
-      </div>
-      <div class="main03">
-          <img src="img/medicine_em.png" alt="book_image">
-          <img src="img/book_awarded.jpeg" alt="book_image">
-
-
-          </div>
-      </div>
+  $query = "SELECT * FROM blog ORDER BY pub_date DESC LIMIT $start, $view_article";
+  $result = mysqli_query($conn, $query);
+  while($row = mysqli_fetch_array($result))
+  {
+  ?>
+  <article class="card">
+    <?php if($row['file_id']) { ?>
+    <img src="/board/fileUp/download.php?file_id=<?php echo $row['file_id']; ?>" alt="">
+    <?php } ?>
+    <div class="text">
+      <h3><?php echo $row['title']; ?></h3>
+      <p class="summary"><?php echo $row['keyword']; ?></p>
+      <p class="description" style="display: none">
+      <?php echo nl2br($row['description']); ?>
+      </p>
+      <button onclick="$(this).parent().find('.summary').hide().end().find('.description').show(); $(this).hide().next().show();" style="cursor: pointer">더읽기</button>
+      <button onclick="$(this).parent().find('.summary').show().end().find('.description').hide(); $(this).hide().prev().show();" style="display: none; cursor: pointer">접기</button>
+    </div>
+  </article>
+  <?php
+  }
+  ?>
+</main>

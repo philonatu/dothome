@@ -12,13 +12,38 @@ include "lib02.php";
   $title = $_POST['title'];
   $author = $_POST['author'];
   $book_title = $_POST['book_title'];
-  $file = $_POST['file'];
+  $file = $_FILES['usrfile'];
   $description = $_POST['description'];
   $site = $_POST['site'];
   $site_manager = $_POST['site_manager'];
   $pub_date = $_POST['pub_date'];
   $pub_check = $_POST['pub_check'];
   $top = $_POST['top'];
+
+  $upload_directory = './fileUp/data/';
+  $path = md5(microtime()) . '.' . $ext;
+  $ext_str = "hwp,xls,doc,xlsx,docx,pdf,jpg,JPG,jpeg,gif,png,PNG,txt,ppt,pptx";
+  $allowed_extensions = explode(',', $ext_str);
+
+  if(is_uploaded_file($file['tmp_name']))
+  {
+    $ext = end(explode('.', $file['name']));
+
+    // 확장자 체크
+    if(in_array($ext, $allowed_extensions)) {
+      if(move_uploaded_file($file['tmp_name'], $upload_directory.$path)) {
+
+        $query = "INSERT INTO upload_file (file_id, name_orig, name_save, reg_time) VALUES(?,?,?,now())";
+        $file_id = md5(uniqid(rand(), true));
+        $name_orig = $file['name'];
+        $name_save = $path;
+  
+        $stmt = mysqli_prepare($conn, $query);
+        $bind = mysqli_stmt_bind_param($stmt, "sss", $file_id, $name_orig, $name_save);
+        $exec = mysqli_stmt_execute($stmt);
+      }
+    }
+  }
 
 
 // 파괴성 인젝션을 방지하기 위하여
@@ -42,6 +67,11 @@ include "lib02.php";
 
   $top = $row[0] + 1;
 
+  if(!$file_id)
+  {
+    $file_id = '0';
+  }
+
   if($id) {
     $query = "update archive set
     genre ='$genre',
@@ -49,21 +79,24 @@ include "lib02.php";
     title = '$title',
     author = '$author',
     book_title = '$book_title',
-    file = '$file',
+    file = '{$file['name']}',
+    file_id = '$file_id',
     description = '$description',
     site = '$site',
     site_manager = '$site_manager',
     pub_date = '$pub_date',
-    pub_check = '$pub_check'
-    top = '$top'
+    pub_check = '$pub_check',
+    name_orig = ''
     where id = '$id' ";
 
     mysqli_query($conn, $query);
   } else {
-    $query = "INSERT INTO archive(genre, category, title, author, book_title, file, description, site, site_manager, pub_date, pub_check, top) VALUES('$genre', '$category', '$title', '$author', '$book_title', '$file', '$description', '$site', '$site_manager', '$pub_date', '$pub_check', '$top')";
+    $query = "INSERT INTO archive(genre, category, title, author, book_title, file, file_id, description, site, site_manager, pub_date, pub_check) VALUES('$genre', '$category', '$title', '$author', '$book_title', '{$file['name']}', '$file_id', '$description', '$site', '$site_manager', '$pub_date', '$pub_check')";
 
     mysqli_query($conn, $query);
   }
+
+  echo mysqli_error($conn);
 
 ?>
 <script>

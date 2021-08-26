@@ -25,5 +25,5 @@
 <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@300&display=swap" rel="stylesheet">
 
 <link rel="stylesheet" href="css/style.css">
-
+<script src="/js/jquery-3.6.0.min.js"></script>
 <title>philonatu</title>

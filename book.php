@@ -33,23 +33,24 @@
           </div>
           <div class="booklist">
             <p>
-              『의학의 철학』 씨아이알 2020년<span>대한민국 학술원 2021 우수도서 선정</span> <a style="font-size:10px" href="http://www.wonjutoday.co.kr/news/articleView.html?idxno=121307" >관련기사</a> &nbsp;&nbsp;<a style="font-size:10px" href="../files/mybookReview2106.pdf" target="top">관련 서평</a>  <br>
+              『의학의 철학』 씨아이알 2020년<span>대한민국 학술원 2021 우수도서 선정</span> <a style="font-size:10px" href="http://www.wonjutoday.co.kr/news/articleView.html?idxno=121307" target="top">관련기사</a> &nbsp;&nbsp;<a style="font-size:10px" href="../files/mybookReview2106.pdf" target="top">관련 서평</a>  <br>
               『뇌복제와 인공지능 시대』(R.Hanson, 최순덕/최종덕 공역) 씨아이알 2020년
               <!--                         <span style="font-size: 16px; font-family: 'Nanum Pen Script', cursive; color: blue;">-->
               <span>학술원 우수도서 선정</span> <br>
 
               『비판적 생명철학』 당대 2016년
               <span>
-                문체부 세종도서 선정, 환경정의 2016 올해의 책 선정</span> <br>
-              『승려와 원숭이』(심재관/최종덕 공저) 동녘 2016년 <br>
+                문체부 세종도서 선정, 환경정의 2016 올해의 책 선정</span>&nbsp;<a style="font-size:10px" href="https://www.youtube.com/watch?v=1fp3sq6jw1o" target="top">관련 미디어</a> <br>
+              『승려와 원숭이』(심재관/최종덕 공저) 동녘 2016년 <a style="font-size:10px" href="https://www.kbpf.org/936/936/" target="top">관련기사1</a> &nbsp;<a style="font-size:10px" href="https://www.yna.co.kr/view/AKR20160310058100005" target="top">관련기사2</a>&nbsp;<a style="font-size:10px" href="https://m.blog.naver.com/PostView.naver?isHttpsRedirect=true&blogId=them1&logNo=221196396329" target="top">관련기사3</a>&nbsp;&nbsp;<a style="font-size:10px" href="http://www.mediabuddha.net/news/view.php?number=18494" target="top">관련기사4</a>&nbsp;&nbsp;<a style="font-size:10px" href="https://www.hankookilbo.com/News/Read/201603111543079475" target="top">관련기사5</a><br>
               『생물철학』 생각의 힘 2014년
               <span>
                 대한민국 학술원 과학부문 우수도서 선정</span> <br>
               『찰스다윈 한국의 학자를 만나다』 휴머니스트 2010년 <br>
               『이분법을 넘어서』(장회익/최종덕 공저) 한길사 2007년<span>
-                문체부 2008 우수교양도서 선정</span> <br>
-              『시앵티아』 당대 2003년 <br>
-              『인문학 어떻게 공부할 것인가』 휴머니스트 2003년 <br>
+                문체부 2008 우수교양도서 선정</span>&nbsp;<a style="font-size:10px" href="https://m.dongascience.com/news.php?idx=-63297" target="top">관련기사</a> <br>
+              『시앵티아』 당대 2003년<span>
+                과기부 2004 우수도서 선정</span> <br>
+              『인문학 어떻게 공부할 것인가』 휴머니스트 2003년&nbsp;<a style="font-size:10px" href="https://anthropo.tistory.com/214" target="top">대학원 관련 부분추출</a> <br>
               『함께하는 환경철학』 동연 2003년 <br>
               『과학철학의 역사』(J. Losee, 정병훈/최종덕 공역) 동연 1999년 <br>
               『부분의 합은 전체인가』 소나무 1995년 <br>

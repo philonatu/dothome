@@ -13,7 +13,7 @@
 
         <div class="headwords">
 
-          <div class="row02 tooltip" data-tooltips="border-box 외형을 php를 통해 MYSQL DB와 연결하는 작업을 해야 하는데, 기술적으로 아직 부족하군요.">
+          <div class="row02" >
             <p style="color:#263343; font-size:28px; font-family: 'Nanum Pen Script'">기관 출판되지 않은 자료들, 표나 시트, 그림이나 글</p>
           </div>
           <div class="row03 >
@@ -23,9 +23,9 @@
 
 
         <div class="navbar_under">
-          <div class="menu_under">
+          <!-- <div class="menu_under">
             <a style="padding-left:15px" href="#">지구와 세계</a>
-          </div>
+          </div> -->
           <div class="menu_under">
             <a href="#">자연과 과학</a>
           </div>

@@ -50,9 +50,8 @@
           ?>
             <tr>
               <td class="c1"> <?=($cot)?></td>
-              <td class="c2"> <?=$row['genre']?></td>
               <td class="c21"> <?=$row['category']?></td>
-              <td class="c3"><a href=read.php?id=<?=$row[id]?>><?=$row['title']?></a></td>
+              <td class="c3"><a href="review_view.php?id=<?=$row[id]?>"><?=$row['title']?></a></td>
               <td class="c4"><?=$row['author']?></td>
               <td class="c5"><?=$row['book_title']?></td>
             </tr>
