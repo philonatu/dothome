@@ -1,7 +1,7 @@
 <?php
   include "container/lib01.php";
 ?>
-    <!-- <link rel="stylesheet" href="css/style_main.css"> -->
+    <link rel="stylesheet" href="css/style_main.css">
 <main class="cards">
   <?php
   $page = $_GET['page'];
@@ -26,7 +26,7 @@
     <img src="/board/fileUp/download.php?file_id=<?php echo $row['file_id']; ?>" alt="">
     <?php } ?>
     <div class="text">
-      <h3><?php echo $row['title']; ?></h3>
+      <h4><?php echo $row['title']; ?></h4>
       <p class="summary"><?php echo $row['keyword']; ?></p>
       <p class="description" style="display: none">
       <?php echo nl2br($row['description']); ?>

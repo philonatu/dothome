@@ -1,5 +1,5 @@
 <?php
-  include "./container/lib01.php";
+  include "container/lib01.php";
 ?>
 
         <nav class="navbar">
@@ -43,7 +43,7 @@
             <a href="blog.php">글과 그림</a>
           </div>
           <div class="menu_under tooltip" data-tooltips="article based English version">
-            <a style="margin-left: 100px; font-size:14px" href="http://philonatu.com/?page_id=295">English Version</a>
+            <a style="margin-left: 100px; font-size:14px" href="english.php">English Version</a>
           </div>
 
 

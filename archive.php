@@ -39,7 +39,7 @@
         <div class="archive_info">
           <p>
           <?php
-                   echo "- ".strftime('%Y년 %m월 %d일'). "까지 시험삼아 등록한 데이터 전체 예.갯수는 ".$total_article."개 입니다.";
+                   echo "- ".strftime('%Y년 %m월 %d일'). "까지 시험삼아 등록한 데이터 전체 갯수는 ".$total_article."개 입니다. <br><br> 여기 올라온 자료 리포트row는 테스트 삼아 올린 것입니다. 진짜 데이터는 아직 올리지 못했습니다.<br><br> mysql 데이터베이스 이전migration 하는 방법을 더 배워야 하거든요. 곧 올라옵니다. ";
           ?>
           </p>
 

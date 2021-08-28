@@ -33,6 +33,8 @@ $row = mysqli_fetch_array($result);
         <label for="lecture">강의</label>
         <input type="radio" id="concept" name="genre" value="개념" <?php echo($isconcept? 'checked="checked"':''); ?> >
         <label for="concept">개념</label>
+        <input type="radio" id="eng" name="genre" value="영문" <?php echo($isaso? 'checked="checked"':''); ?> >
+        <label for="eng">영문</label>        
         <input type="radio" id="aso" name="genre" value="기타" <?php echo($isaso? 'checked="checked"':''); ?> >
         <label for="aso">기타</label>
        </td>

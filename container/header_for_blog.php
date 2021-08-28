@@ -14,7 +14,7 @@
         <div class="headwords">
 
           <div class="row02" >
-            <p style="color:#263343; font-size:28px; font-family: 'Nanum Pen Script'">기관 출판되지 않은 자료들, 표나 시트, 그림이나 글</p>
+            <p style="color:#263343; font-size:28px; font-family: 'Nanum Pen Script'">기관 출판되지 않은거 <br>  표나 시트, 그림이나 글</p>
           </div>
           <div class="row03 >
             <a href="index.php"><img src="/img/logo2106-2.png"></a>
