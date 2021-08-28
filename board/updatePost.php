@@ -79,7 +79,7 @@ include "lib02.php";
   }
 
   // if($id) {
-    $query = "update archive set,
+    $query = "update archive set
     genre ='$genre',
     category = '$category',
     title = '$title',
@@ -91,8 +91,7 @@ include "lib02.php";
     site = '$site',
     site_manager = '$site_manager',
     pub_date = '$pub_date',
-    pub_check = '$pub_check',
-    name_orig = ''
+    pub_check = '$pub_check'
     where id = '$id' ";
 
     mysqli_query($conn, $query);
@@ -100,7 +99,10 @@ include "lib02.php";
     $result = mysqli_query($conn, $query);
     if($result === false) {
       echo '수정 실패';
-      error_log(mysqli_error($conn));
+
+      //error_log(mysqli_error($conn));
+      echo mysqli_error($conn);
+      exit;
     } else {
       echo '수정 성공';
     }
