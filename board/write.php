@@ -34,7 +34,7 @@ $row = mysqli_fetch_array($result);
         <input type="radio" id="concept" name="genre" value="개념" <?php echo($isconcept? 'checked="checked"':''); ?> >
         <label for="concept">개념</label>
         <input type="radio" id="eng" name="genre" value="영문" <?php echo($isaso? 'checked="checked"':''); ?> >
-        <label for="eng">영문</label>        
+        <label for="eng">영문</label>
         <input type="radio" id="aso" name="genre" value="기타" <?php echo($isaso? 'checked="checked"':''); ?> >
         <label for="aso">기타</label>
        </td>
@@ -91,7 +91,7 @@ $row = mysqli_fetch_array($result);
     <tr>
       <th> 내용 </th>
       <!-- 수정하면 textarea 부분이 다 없어짐 이는 큰문제 이다. 이를 반드시 해결해야 한< 해결했음 -->
-      <td> <textarea name="description" value="<?=$row[description]?>" style="width:100%; height:500px;"> <?=$row[description]?>  </textarea>
+      <td> <textarea name="description" value="<?=$row[description]?>" style="width:100%; height:500px;" contenteditable="true"> <?=$row[description]?>  </textarea>
       </td>
     </tr>
     <tr>

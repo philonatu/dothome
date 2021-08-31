@@ -8,7 +8,7 @@ $result = mysqli_query($conn, $query);
 $row = mysqli_fetch_array($result);
 ?>
 
-<form action="writePost.php" enctype="multipart/form-data" method="post">
+<form action="updatePost.php?id=<?=$id?>" enctype="multipart/form-data" method="post">
   <!-- 아래 코드가 있어야 글쓰기와 수정을 구분할 수 있다 -->
   <input type="hidden" name="id" value="<?=$id?>">
   <table width=1000 border="1">
@@ -29,20 +29,15 @@ $row = mysqli_fetch_array($result);
         <label for="science">자연과 과학</label>
         <input type="radio" id="concept" name="category" value="concept">
         <label for="concept">개념페이지</label>
-      </td>
+       </td>
     </tr>
     <tr>
       <th> 파일 첨부 </th>
       <td>
         <input type="hidden" name="MAX_FILE_SIZE" value="300000" >
         <input type="file" name="usrfile">
-
-
-        <!--<input type="submit" value="파일 올려">-->
       </td>
-
     </tr>
-
     <tr>
       <th> 키워드 <br> (영문/개념페이지) </th>
       <td> <input type="text" name="keyword" value="<?=$row['keyword']?>" style="width: 100%">
